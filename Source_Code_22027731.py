@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 This module provide tools to  represent the data in different types
 of plots for example pie plot, lineplot.
 '''
+
 import pandas as pd
 '''
 This python module consist of multiple tools useful for data handelling 
@@ -20,6 +21,7 @@ and manuplation
 gas = pd.read_csv('C:/Users/shrav/OneDrive/Desktop/sai/gas_prices2.csv') 
 expo = pd.read_csv('C:/Users/shrav/OneDrive/Desktop/sai/Extracted_data.csv')
 fifa22 = pd.read_csv('C:/Users/shrav/OneDrive/Desktop/sai/players_22.csv', low_memory = (False)) # When reding large data sets
+
 
 def lineplot(gas):
     '''
@@ -67,6 +69,7 @@ def lineplot(gas):
     # Show the plot
     plt.show()
     
+    
 def lineplot2(expo):
     '''
     Plots the line graph of exporting gas prices for different countries over the time
@@ -104,6 +107,7 @@ def lineplot2(expo):
     
 # set bins for histograms        
 bins = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+    
     
 def histogram(fifa22):
     '''
@@ -191,6 +195,7 @@ def histogram(fifa22):
     
     return
 
+
 def pieplot(fifa22):
     '''
     creates a pie chart to display the foot preference of FIFA players in 2022
@@ -221,6 +226,7 @@ def pieplot(fifa22):
     plt.show()
     
     return
+
 
 def pieplot2(fifa22):
     '''
@@ -254,6 +260,7 @@ def pieplot2(fifa22):
     plt.show()
     
     return
+
 
 def boxplot(fifa22):
     '''
@@ -292,6 +299,7 @@ def boxplot(fifa22):
     plt.show()
     
     return
+
 
 lineplot(gas)
 lineplot2(expo)
